@@ -4,7 +4,8 @@ SELECT * FROM products;
 
 SELECT brand_name,rating,((marked_price-discounted_price)/marked_price)*100 as "discount%" FROM products;
 
-
+# Write an SQL query to retrieve the unique product tags, brand name, and discounted price of all products
+  from the brand "Adidas" where the discounted price is greater than 5000.
 SELECT DISTINCT(product_tag),brand_name,discounted_price
 FROM products
 WHERE brand_name = "Adidas"
